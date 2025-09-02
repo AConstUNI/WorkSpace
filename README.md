@@ -76,7 +76,7 @@ Como gestor, quero cadastrar novas salas e estações, para disponibilizá-las p
 Como sistema, quero impedir que um recurso seja reservado em horário já ocupado, para evitar conflitos de agendamento.
 
 ## 7. Diagramas de Caso de Uso
-<img width="450" height="561" alt="CUWS-dark" src="https://github.com/user-attachments/assets/e0c834cf-9497-46fe-8585-baf198f038e9" />
+<img width="1766" height="1710" alt="image" src="https://github.com/user-attachments/assets/73ec834c-988b-4904-85d3-29fb56b3a2c2" />
 
 ## 8. Backlog com Priorização MoSCoW
 ### Must Have (Obrigatório)
