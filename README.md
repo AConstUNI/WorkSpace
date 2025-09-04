@@ -130,8 +130,78 @@ Não Incluso (fora do escopo inicial)
 - Recursos de chat ou videoconferência.
 
 
-## 7. Diagramas de Caso de Uso
+## 7. Casos de Uso
+### Diagrama
 <img width="1766" height="1710" alt="image" src="https://github.com/user-attachments/assets/73ec834c-988b-4904-85d3-29fb56b3a2c2" />
+
+### Casos de Uso Identificados
+
+Atores
+- **Membro**: usuário que reserva salas e estações de trabalho.  
+- **Gestor**: administrador do coworking, responsável pela gestão dos recursos.  
+
+Casos de Uso do Membro
+- Reserva sala
+- Cancela reserva
+- Edita reserva
+- Login / Autenticação
+- Visualiza disponibilidade
+- Recebe notificação de reserva
+
+Casos de Uso do Gestor
+- Cadastra recursos
+- Edita recurso
+- Exclui recurso
+- Visualiza todas as reservas
+- Gera relatórios de utilização
+- Gerencia membros
+
+### Detalhamento do Caso de Uso — **Reserva sala**
+
+**Nome:** Reserva sala  
+**Ator Principal:** Membro  
+**Stakeholders:** Membro, Gestor  
+**Objetivo:** Permitir que o membro reserve uma sala ou estação em horário livre.  
+**Trigger:** Membro seleciona recurso e inicia a solicitação de reserva.  
+
+Pré-condições
+- Membro autenticado.  
+- Recurso ativo e disponível no sistema.  
+
+Pós-condições
+- **Sucesso:** Reserva confirmada e salva com status “ativa”; notificação enviada (quando habilitada).  
+- **Falha:** Nenhuma alteração feita; mensagem de erro exibida.  
+
+Fluxo Principal
+1. O membro acessa o calendário de um recurso.  
+2. Seleciona data, hora de início e término.  
+3. O sistema **inclui** “Visualiza disponibilidade”.  
+4. O sistema **inclui** “Impedir reserva em horário ocupado” para validar conflitos.  
+5. O sistema confirma a criação da reserva.  
+6. O sistema **estende** “Recebe notificação de reserva”, caso notificações estejam habilitadas.  
+
+Fluxos Alternativos
+- **FA1 — Intervalo inválido:** se término ≤ início, o sistema exibe erro e retorna ao passo 2.    
+- **FA2 — Fora da política:** se a data exceder o limite configurado (ex.: até 30 dias à frente), o sistema rejeita e informa a política.  
+
+Exceções
+- **E1 — Conflito:** outro membro já reservou o mesmo horário → sistema bloqueia e sugere alternativas.  
+- **E2 — Falha de comunicação:** reserva confirmada, mas notificação não entregue; sistema registra log.  
+- **E3 — Condição de corrida:** duas reservas simultâneas → apenas a primeira confirmada é persistida.
+- **E4 — Recurso inativo:** caso o recurso esteja inativo, o sistema bloqueia a ação.  
+
+Regras de Negócio
+- **RN1:** Não permitir sobreposição de horários em um mesmo recurso.  
+- **RN2:** Definir duração mínima (30 min) e máxima (4h).  
+- **RN3:** Reservas devem respeitar o horário de funcionamento do coworking.  
+- **RN4:** Cada membro só pode criar, editar e cancelar suas próprias reservas.  
+- **RN5:** Gestores têm acesso de visualização a todas as reservas.  
+
+Critérios de Aceitação
+- **CA1:** Dado que uma sala está livre entre 14:00–15:00, quando o membro reserva nesse intervalo, então o sistema confirma e exibe a reserva.  
+- **CA2:** Dado que existe reserva entre 10:00–11:00, quando outro membro tenta reservar 10:30–11:00, então o sistema recusa e informa conflito.  
+- **CA3:** Dado que notificações estão habilitadas, quando a reserva é confirmada, então o membro recebe notificação.  
+
 
 ## 8. Backlog com Priorização MoSCoW
 ### Must Have (Obrigatório)
