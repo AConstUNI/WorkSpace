@@ -1,12 +1,13 @@
 # WorkSpace
 
 ## 1. Resumo
-O cowork space e um local de trabalho compartilhado, onde empresas, CNPJ’s MEI, freelancer’s, start-up’s, advogados, etc... utilizam de forma esporádica ou continua dependendo das suas necessidades, seja para uma rápida reunião com um cliente, até um local fixo até gerar uma estabilidade para alugar ou construir local próprio de uma start-up 
+O cowork space e um local de trabalho compartilhado, onde empresas, CNPJ’s MEI, freelancer’s, start-up’s, advogados, etc... utilizam de forma esporádica ou continua dependendo das suas necessidades, seja para uma rápida reunião com um cliente, até um local fixo até gerar uma estabilidade para alugar ou construir local próprio de uma start-up
+
 
 ## 2. Visão
 O Problema: A gestão de um coworking space e uma grande responsabilidade e complicada, tanto pela quantidade de coisas a se gerir, quanto pela quantidade de clientes que se pode existir, são muitos espaços para se cuidar de contrato de locação a longo prazo como também a curto prazo, muitos materiais alugados, assim podendo ocorrer conflitos de agendamentos, aluguel de recursos já esgotados, alem da possível demora causada pela burocracia de agendamentos, assim podendo causar insatisfação do cliente 
 
-Nossa Visão: o COS: Cow Orc Space e simplificar a gestão da grande gama de produtos, assim como facilitar a gestão dos recursos do work space, dando a possibilidade dos próprios inquilinos fazerem o aluguel de seus espaços e dos recursos disponibilizado pelo local, assim fazendo que cada cliente possa usufruir dos recursos adequados as necessidades deles. 
+Nossa Visão: o COS: Cow Orc Space busca simplificar a gestão da grande gama de produtos, assim como facilitar a gestão dos recursos do work space, dando a possibilidade dos próprios inquilinos fazerem o aluguel de seus espaços e dos recursos disponibilizado pelo local, assim fazendo que cada cliente possa usufruir dos recursos adequados as necessidades deles. 
 
 
 ## 3. Público-Alvo
@@ -19,7 +20,23 @@ Gestores de coworking que precisam de controle de uso dos espaços.
 Equipes remotas que precisam de reuniões presenciais pontuais.
 
 
-## 4. Personas
+## 4. Escopo
+Incluso
+- Cadastro e autenticação de membros.
+- Cadastro de recursos (salas e estações).
+- Visualização de disponibilidade em calendário.
+- Reserva de recursos com bloqueio de horários já ocupados.
+- Cancelamento de reservas pelo próprio usuário.
+- Notificações de confirmação e cancelamento.
+
+Não Incluso (fora do escopo inicial)
+- Pagamento online.
+- Integração com APIs externas de calendário (Google, Outlook).
+- Gestão financeira do coworking.
+- Recursos de chat ou videoconferência.
+
+
+## 5. Personas
 ### Persona 1:  O cliente esporádico 
 
 Nome: Carlos, o Advogado.  
@@ -29,7 +46,7 @@ Perfil:
 
 Objetivos:  
 - Ter um local a qual procurar uma área de trabalho. 
-- Alugar de forma simples, rápida, autónoma e simplificada sem enfrentar burocracia de contrato de aluguel e riscos de sobreposição de agenda. 
+- Alugar de forma simples, rápida, autônoma e simplificada sem enfrentar burocracia de contrato de aluguel e riscos de sobreposição de agenda. 
 - Gestão de gastos simplificados e acessível. 
 
 Dores (Frustrações):  
@@ -73,7 +90,7 @@ Objetivos:
 
 Dores (Frustrações):  
 - Perder muito tempo desenvolvendo contratos para cada cliente. 
-- Não poder estar presencialmente acompanhando a disponibilidade de recursos. 
+- Não poder estar acompanhando a disponibilidade de recursos de forma remota. 
 - Falta de controle total sobre consumos dentro de seu work space. 
 
 ### Persona 4:  O funcionário. 
@@ -93,42 +110,46 @@ Dores (Frustrações):
 - Necessidade de ficar procurando o registo de cada pessoa para liberar acesso. 
 - Ter de acompanhar pedidos manuais ou tag’s de porta para acompanhar pedidos de limpeza de escritório, podendo assim passar algo despercebido ficando sem prestar o serviço causando insatisfação do cliente. 
 
-## 5. User Stories
-### Reserva de Sala
+## 6. User Stories
+### Acesso ao site
 
-Como membro, quero reservar uma sala de reunião em um horário disponível, para realizar reuniões com clientes.
+Como qualquer um dos usuários quero acessar o site e ser redirecionado para a área que preciso
 
-### Visualização de Disponibilidade
+Critérios de Aceite:
+- Dado que sou um cliente, quero acesso ao agendamento/locação de espaço e posteriormente aos pedidos de serviço/recursos
+- Dado que sou um funcionário, quero acesso aos serviços requeridos e aos recursos
+- Dado que sou um gerente, quero acesso aos(as) agendamentos/locações, aos recursos e ao relatório mensal
 
-Como membro, quero visualizar no calendário a disponibilidade das salas, para escolher um horário adequado.
+### Aluguel esporádico de um work space. 
 
-### Cancelamento de Reserva
+Como um cliente esporádico (Carlos) eu quero abrir o website, e procurar um escritório adequado para realizar minha reunião com meu cliente. 
 
-Como membro, quero cancelar minha reserva, para liberar o espaço caso não possa comparecer.
+Critérios de Aceite: 
+- Dado que eu estou na tela de realizar agendamento, quando eu seleciono o escritório desejado, deve me ser mostrado os horários disponíveis e preços. 
+- Dado que eu realizei a reserva deve-me ser fornecido o contrato de locação automaticamente, especificando a data com horário e preço da locação do espaço. 
 
-### Cadastro de Recursos
+### Aluguel fixo de um work space. 
 
-Como gestor, quero cadastrar novas salas e estações, para disponibilizá-las para reserva.
+Como um cliente fixo (André) eu quero abrir o website e através de uma janela separada para locações de longa duração quero escolher um local de trabalho para meu negócio que esta começando. 
 
-### Bloqueio de Horário Ocupado
+Critérios de Aceite: 
+- Dado que eu escolhi meu work space na tela de locação, quero realizar o cadastro de minha empresa no sistema. 
+- Dado que minha locação foi realizada com sucesso, é esperado que aquela sala não apareça mais para locação em nem um local do sistema e o contrato apareça na tela.
 
-Como sistema, quero impedir que um recurso seja reservado em horário já ocupado, para evitar conflitos de agendamento.
+### Visualização de recursos
 
-## 6. Escopo
-Incluso
-- Cadastro e autenticação de membros.
-- Cadastro de recursos (salas e estações).
-- Visualização de disponibilidade em calendário.
-- Reserva de recursos com bloqueio de horários já ocupados.
-- Cancelamento de reservas pelo próprio usuário.
-- Notificações de confirmação e cancelamento.
+Como gerente (Monica) eu quero abrir o website e conseguir visualizar os recursos cadastrados e quais estão em falta.
 
-Não Incluso (fora do escopo inicial)
-- Pagamento online.
-- Integração com APIs externas de calendário (Google, Outlook).
-- Gestão financeira do coworking.
-- Recursos de chat ou videoconferência.
+Critérios de Aceite:
+- Dado que entrei na página de recursos, quero visualizar todos os recursos cadastrados no sistema.
+- Dado que filtrei os recurso por recursos em falta, quero ver quais recursos estão com problemas/falta.
 
+### Adição de recursos
+
+Como funcionário (Ângelo) quero entrar na página de recursos e cadastrar os recurso que foram recebidos.
+
+Critérios de Aceite:
+- Dado que entrei na aba de recursos, quero conseguir realizar o cadastro de produtos no sistema através de um formulário com opções pré definidas.
 
 ## 7. Casos de Uso
 ### Diagrama
