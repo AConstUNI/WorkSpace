@@ -116,40 +116,74 @@ Dores (Frustrações):
 Como qualquer um dos usuários quero acessar o site e ser redirecionado para a área que preciso
 
 Critérios de Aceite:
-- Dado que sou um cliente, quero acesso ao agendamento/locação de espaço e posteriormente aos pedidos de serviço/recursos
-- Dado que sou um funcionário, quero acesso aos serviços requeridos e aos recursos
-- Dado que sou um gerente, quero acesso aos(as) agendamentos/locações, aos recursos e ao relatório mensal
+- Dado que sou um cliente, quero acesso ao agendamento/locação de espaço e posteriormente aos pedidos de serviço/recursos.
+- Dado que sou um funcionário, quero acesso aos serviços requeridos e aos recursos.
+- Dado que sou um gerente, quero acesso aos(as) agendamentos/locações, aos recursos e ao relatório mensal.
+
+
+### Gerenciamneto de salas
+
+Como gerente (Monica) quero conseguir manipular as salas no sistema.
+
+Critérios de Aceite:
+- Dado que estou na area de gerenciamento de salas que ver todas as salas cadastradas no sistema e se elas estão livres ou ocupadas.
+- Dado que clique em uma das salas quero poder bloquear ela para realizar reformas na mesma.
+- Dado que selecione uma opção de cadastro de sala quero que me seja fornecido um formulário para preencher as informações da sala.
+
 
 ### Aluguel esporádico de um work space. 
 
-Como um cliente esporádico (Carlos) eu quero abrir o website, e procurar um escritório adequado para realizar minha reunião com meu cliente. 
+Como um cliente esporádico (Carlos) quero abrir o website, e procurar um escritório adequado para realizar minha reunião com meu cliente. 
 
 Critérios de Aceite: 
 - Dado que eu estou na tela de realizar agendamento, quando eu seleciono o escritório desejado, deve me ser mostrado os horários disponíveis e preços. 
 - Dado que eu realizei a reserva deve-me ser fornecido o contrato de locação automaticamente, especificando a data com horário e preço da locação do espaço. 
 
+
 ### Aluguel fixo de um work space. 
 
-Como um cliente fixo (André) eu quero abrir o website e através de uma janela separada para locações de longa duração quero escolher um local de trabalho para meu negócio que esta começando. 
+Como um cliente fixo (André) quero abrir o website e através de uma janela separada para locações de longa duração quero escolher um local de trabalho para meu negócio que esta começando. 
 
 Critérios de Aceite: 
 - Dado que eu escolhi meu work space na tela de locação, quero realizar o cadastro de minha empresa no sistema. 
 - Dado que minha locação foi realizada com sucesso, é esperado que aquela sala não apareça mais para locação em nem um local do sistema e o contrato apareça na tela.
 
-### Visualização de recursos
 
-Como gerente (Monica) eu quero abrir o website e conseguir visualizar os recursos cadastrados e quais estão em falta.
+### Pedidos de recursos e serviços
+
+Como um cliente (André ou Carlos) quero poder abrir o site e poder requisitar recursos ou serviços para a sala alugada/alocada.
+
+Critérios de Aceite:
+- Dado que eu possua uma sala alugada/alocada, quero poder pedir recursos ou serviços disponiveis no site para minha sala.
+
+
+### Adição de novos recursos ou serviço
+
+Como gerente (Monica) quero conseguir adicionar recursos novos no sistema através do website.
+
+Critérios de Aceite:
+- Dado que estou na página de recursos quero ter uma aba para cadastrar novos produtos/serviços no sistema.
+- Dado que eu selecione a aba quer preencher um formulário para cadastrar o produto/serviço.
+- Dado o produto seja cadastrado com sucesso quero um alerta de produto/serviço adicionado com sucesso.
+
+
+### Gerenciamento de recursos
+
+Como funcionário (Ângelo) ou gerente (Monica) quero entrar na página de recursos e visualizar os recursos e/ou catalogar os recursos que foram recebidos.
 
 Critérios de Aceite:
 - Dado que entrei na página de recursos, quero visualizar todos os recursos cadastrados no sistema.
-- Dado que filtrei os recurso por recursos em falta, quero ver quais recursos estão com problemas/falta.
+- Dado que filtrei os recurso por recursos em falta, quero ver quais recursos estão com problemas ou em falta.
+- Dado que selecionei a opção de adição de recursos, quero conseguir realizar o cadastro de produtos no sistema através de um formulário com opções pré definidas.
 
-### Adição de recursos
 
-Como funcionário (Ângelo) quero entrar na página de recursos e cadastrar os recurso que foram recebidos.
+### Visualização de relatorio mensal
+
+Como gerente (Monica) quero poder visualizar o relatorio mensal da empresa.
 
 Critérios de Aceite:
-- Dado que entrei na aba de recursos, quero conseguir realizar o cadastro de produtos no sistema através de um formulário com opções pré definidas.
+- Dado que acesso o site quero visualizar o relatorio mensal de salas usadas e serviços/recursos utilizados.
+
 
 ## 7. Casos de Uso
 ### Diagrama
