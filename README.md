@@ -210,6 +210,13 @@ Casos de Uso do Gestor
 - Visualiza todas as reservas
 - Gera relatórios de utilização
 - Gerencia membros
+  
+Casos de Uso do Funcionário
+- Visualiza recursos disponíveis e em falta
+- Cataloga recursos recebidos
+- Acompanha solicitações de limpeza
+- Registra reposição de insumos (ex.: café, papel, sabonete)
+- Monitora entrada e saída de pessoas
 
 ### Detalhamento do Caso de Uso — **Reserva sala**
 
