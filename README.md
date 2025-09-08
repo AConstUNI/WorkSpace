@@ -22,18 +22,18 @@ Equipes remotas que precisam de reuniões presenciais pontuais.
 
 ## 4. Escopo
 Incluso
-- Cadastro e autenticação de membros.
-- Cadastro de recursos (salas e estações).
-- Visualização de disponibilidade em calendário.
-- Reserva de recursos com bloqueio de horários já ocupados.
-- Cancelamento de reservas pelo próprio usuário.
-- Notificações de confirmação e cancelamento.
+- Cadastro e autenticação de usuários (clientes, gerente, funcionários).
+- Reserva de salas (esporádica ou fixa).
+- Gestão de salas e contratos pelo gerente.
+- Requisição de recursos e serviços adicionais.
+- Gestão de estoque de recursos (funcionários + gerente).
+- Relatórios mensais para gestão financeira e operacional.
+- Portal único com redirecionamento para área específica de cada perfil.
 
 Não Incluso (fora do escopo inicial)
-- Pagamento online.
-- Integração com APIs externas de calendário (Google, Outlook).
-- Gestão financeira do coworking.
-- Recursos de chat ou videoconferência.
+- Integração direta com meios de pagamento externos (ex.: PayPal, Stripe).
+- Automação física de portas, catracas e sensores.
+- Aplicativo mobile nativo.
 
 
 ## 5. Personas
@@ -261,39 +261,38 @@ Critérios de Aceitação
 ## 8. Backlog com Priorização MoSCoW
 ### Must Have (Obrigatório)
 
-[M1] Cadastro de membros.
+- Acesso ao site com redirecionamento para área de cliente, gerente ou funcionário.
+- Aluguel esporádico de salas (busca, escolha de horário, preço, contrato automático).
+- Aluguel fixo de salas (com cadastro de empresa, bloqueio de sala e contrato).
+- Gerenciamento de salas pelo gerente (cadastrar, bloquear para reforma, visualizar ocupação).
+- Pedidos de recursos e serviços para clientes com salas alugadas.
+- Adição de recursos/serviços pelo gerente.
+- Visualização de recursos e gestão de estoque (gerente e funcionário).
 
-[M2] Cadastro de recursos (salas/estações).
-
-[M3] Visualização de disponibilidade no calendário.
-
-[M4] Realizar reservas.
-
-[M5] Bloqueio de horários ocupados.
-
-[M6] Cancelamento de reservas pelo usuário.
 
 ### Should Have (Importante, mas pode esperar)
 
-[S1] Notificações por e-mail de confirmação/cancelamento.
-
-[S2] Filtros de busca por tipo de sala ou capacidade.
+- Relatório mensal de salas usadas e recursos consumidos para o gerente.
+- Gestão de acesso dos funcionários da empresa (cliente fixo).
+- Alertas automáticos para falta de recursos (estoque baixo).
+- Painel para funcionários acompanharem pedidos de limpeza.
 
 ### Could Have (Desejável, mas não necessário)
 
-[C1] Integração com Google Calendar.
-
-[C2] Histórico de reservas anteriores.
+- Customização do espaço pelo cliente fixo (layout, serviços adicionais).
+- Notificações em tempo real (ex.: confirmação de reserva, pedido atendido).
+- Integração com calendário externo (Google/Outlook).
+- Dashboard financeiro detalhado para o gerente.
 
 
 ### Won’t Have (Fora do escopo agora)
 
-[W1] Pagamento online.
-
-[W2] Relatórios financeiros do coworking.
+- Automação física de entrada/saída (portas inteligentes, catracas).
+- Aplicativo mobile nativo (apenas responsividade web).
+- Planos de fidelidade ou programas de pontos.
 
 ## 9. Requisitos Não Funcionais
-Disponibilidade: O sistema deve estar disponível 99,5% do tempo.
+Disponibilidade: O sistema deve estar disponível 99% do tempo.
 
 Performance: As buscas e visualizações de calendário devem carregar em menos de 2 segundos.
 
