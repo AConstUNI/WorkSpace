@@ -1,6 +1,7 @@
 # WorkSpace – Gestão de espaços para coworking
 
-**Equipe de Produto:** AConstUNI - Caio David de Sousa Coutinho, Izak Vasconcelos Pinheiro, João Pedro Bezerra Silva, João Luiz Alves Mamede Netto, Tatiane Oliveira e Silva 
+**Equipe de Produto:** AConstUNI - Caio David de Sousa Coutinho, Izak Vasconcelos Pinheiro, João Pedro Bezerra Silva, João Luiz Alves Mamede Netto, Tatiane Oliveira e Silva
+
 **Product Owner:** Alex Junio Constantino  
 **Data:** [data da entrega do documento para a equipe de desenvolvimento]  
 
