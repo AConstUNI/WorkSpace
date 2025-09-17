@@ -283,6 +283,7 @@ Como gerente (Mônica), quero visualizar o relatório mensal da empresa.
 
 ## 8. Backlog com Priorização MoSCoW
 ### Must Have (Obrigatório)
+- Landpage de apresentação
 - Acesso ao site com redirecionamento para áreas de cliente, gerente ou funcionário.  
 - Aluguel esporádico de salas (busca, escolha de horário, preço, contrato automático).  
 - Gerenciamento de pessoas com acesso a sala pelo cliente (associados do cliente que está alugando a sala).
