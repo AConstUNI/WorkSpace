@@ -3,7 +3,7 @@
 **Equipe de Produto:** AConstUNI - Caio David de Sousa Coutinho, Izak Vasconcelos Pinheiro, João Pedro Bezerra Silva, João Luiz Alves Mamede Netto, Tatiane Oliveira e Silva
 
 **Product Owner:** Alex Junio Constantino  
-**Data:** [data da entrega do documento para a equipe de desenvolvimento]  
+**Data:** 11/09/2025
 
 ---
 
@@ -442,4 +442,28 @@ Como gerente (Mônica), quero visualizar o relatório mensal da empresa.
 - UX deve ser intuitiva para diferentes perfis de usuários.  
 - Integração futura com meios de pagamento precisa ser planejada.  
 - O sistema deve prever possíveis conflitos de agendamento em tempo real.  
-- Registro de logs para auditoria e rastreabilidade.  
+- Registro de logs para auditoria e rastreabilidade.
+
+---
+
+## 6. Sprints
+
+### 6.1 Sprint 1
+- [M1] Login/cadastro com redirecionamento para área específica (cliente, gerente, funcionário), 
+com opção de confirmação de e-mail.
+- [M2] Cadastro de salas disponíveis pelo gerente, contendo número da sala, descrição, preço do 
+aluguel e, opcionalmente, imagens.
+- [M3] Landpage pública de apresentação do produto.
+- [M4] Página de visualização de salas disponíveis para aluguel, acessível após login do cliente.
+- [M5] Gestão de recursos adicionais pelo gerente (ex.: limpeza, serviços extras), com registro de 
+nome e descrição.
+
+### 6.2 Sprint 2
+- Locação de sala com controle de horários, incluindo calendário para seleção de datas e 
+horários disponíveis, com lógica de bloqueio para evitar sobreposição de reservas. Opcional: 
+aluguel fracionado (por hora) ou mensal.
+- Solicitação de serviços adicionais por clientes que possuam salas alocadas, com base nos 
+recursos cadastrados pelo gerente.
+- Visualização de solicitações de serviços pelos funcionários em sua área de acesso.
+- Geração automática de documento de locação em PDF, contendo data da locação e preço
+
